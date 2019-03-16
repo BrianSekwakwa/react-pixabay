@@ -1,0 +1,52 @@
+/* Styling the Image Card */
+.images {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+
+.images--card {
+  border: 2px solid #bed0db;
+  border-radius: 3px;
+  padding-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.images--card:hover {
+  transform: scale(1.03);
+  border-color: #7f9db0;
+}
+
+.images--card img {
+  width: 100%;
+  height: 250px;
+}
+
+.images--card span {
+  padding: 0 0.2rem;
+}
+
+/* Media Queries  */
+@media (min-width: 600px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .images {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
