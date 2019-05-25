@@ -28,7 +28,7 @@ class Search extends Component {
             });
           })
           .catch(err => {
-            console.log(err);
+            alert(err);
           });
       }
     });
@@ -39,8 +39,6 @@ class Search extends Component {
   };
 
   render() {
-    console.log(this.state.amount);
-    console.log(this.state.images);
     return (
       <div className="search">
         <input
